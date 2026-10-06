@@ -48,7 +48,7 @@ def tema1(request):
     ]
 
     contexto_invierno = {
-        'titulo': 'Lugares que Deberías Visitar en Invierno - Chile',
+        'titulo': 'Lugares que Deberías Visitar en Invierno',
         'lista_destinos': lista_destinos_invierno, 
     }
     
@@ -77,7 +77,7 @@ def tema2(request):
     ]
     
     contexto = {
-        'titulo': 'Lugares que Deberías Visitar en Verano - Chile',
+        'titulo': 'Lugares que Deberías Visitar en Verano',
         'lista_elementos': lista_destinos_verano,
     }
     
