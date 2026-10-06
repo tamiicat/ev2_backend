@@ -35,7 +35,7 @@
     </div>
 
     <div class="carousel-inner">
-        {% for item in lista_destinos%}
+        {% for item in lista_destinos %}
             <div class="carousel-item {% if forloop.first %}active{% endif %}">
                 
                 <svg aria-hidden="true" class="bd-placeholder-img" height="100%" preserveAspectRatio="xMidYMid slice" width="100%" xmlns="http://www.w3.org/2000/svg">
@@ -80,21 +80,4 @@
     </button>
 </div>
 
-<div class="container marketing mt-5">
-    <div class="row text-center">
-        {% for item in lista_destinos %}
-        <div class="col-lg-4">
-            {% if item.imagen %}
-                <img src="{% get_static_prefix %}{{ item.imagen }}" class="bd-placeholder-img rounded-circle mb-3" width="140" height="140" style="object-fit: cover;" alt="{{ item.nombre }}">
-            {% else %}
-                <svg class="bd-placeholder-img rounded-circle mb-3" width="140" height="140" xmlns="http://www.w3.org/2000/svg" role="img" preserveAspectRatio="xMidYMid slice" focusable="false"><rect width="100%" height="100%" fill="var(--bs-secondary-color)"></rect></svg>
-            {% endif %}
-            
-            <h2 class="fw-normal">{{ item.nombre }}</h2>
-            <p>Producto disponible por solo ${{ item.precio }}.</p>
-            <p><a class="btn btn-secondary" href="#">Ver detalles &raquo;</a></p>
-        </div>
-        {% endfor %}
-    </div>
-</div>
 {% endblock %}

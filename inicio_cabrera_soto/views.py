@@ -32,3 +32,31 @@ def tema1(request):
     
     return render(request, 'inicio/tema1.html', contexto_invierno)
 
+def tema2(request):
+    lista_destinos_verano = [
+            {
+                'id': 2,
+                'nombre': 'San Pedro de Atacama',
+                'texto_boton': 'Comprar viaje',
+                'descripcion':'Un destino sorprendente en medio del desierto más árido del mundo. Puedes conocer el Valle de la Luna, géiseres, lagunas altiplánicas y disfrutar de algunos de los cielos más despejados del planeta, ideales para observar las estrellas. Perfecto para quienes buscan aventura, cultura y paisajes diferentes.',
+                'precio': 78.156,
+                'imagen': 'images/san_pedro_atacama.jpg',
+                'clase_boton': 'btn-outline-success',
+            },
+            {
+                'id': 3,
+                'nombre': 'Rapa Nui',
+                'texto_boton': 'Comprar viaje',
+                'descripcion':'Una isla llena de historia, cultura y misterio, famosa por sus enormes moáis. Sus volcanes, playas, cuevas y paisajes naturales se combinan con la fascinante cultura del pueblo Rapa Nui. Es un destino ideal para quienes quieren vivir una experiencia diferente y descubrir una de las culturas más singulares de Chile.',
+                'precio': 399.933,
+                        'imagen': 'images/rapa_nui.jpg',
+                'clase_boton': 'btn-outline-secondary',
+            },
+    ]
+    
+    contexto = {
+        'titulo': 'Lugares que Deberías Visitar en Verano - Chile',
+        'lista_elementos': lista_destinos_verano,
+    }
+    
+    return render(request, 'inicio/tema2.html', contexto)
