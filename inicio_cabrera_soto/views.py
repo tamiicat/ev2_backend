@@ -1,14 +1,21 @@
 from django.shortcuts import render
+from django.urls import reverse_lazy
 
 def inicio(request):
     lista_inicio = [
         {
             'imagen': 'images/invierno.jpg',
             'nombre': 'Destinos Invierno',
+            'url': reverse_lazy('temas:tema1'),   
+            'texto_boton': 'Visitar',
+            'clase_boton': 'btn-visitar',
         },
         {
             'imagen': 'images/verano.jpg',
             'nombre': 'Destinos Verano',
+            'url': reverse_lazy('temas:tema2'),    
+            'texto_boton': 'Visitar',
+            'clase_boton': 'btn-visitar',
         },
     ]
 
