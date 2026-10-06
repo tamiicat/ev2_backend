@@ -1,7 +1,22 @@
 from django.shortcuts import render
 
 def inicio(request):
-    return render(request, 'inicio/inicio.html')
+    lista_inicio = [
+        {
+            'imagen': 'images/invierno.jpg',
+            'nombre': 'Destinos Invierno',
+        },
+        {
+            'imagen': 'images/verano.jpg',
+            'nombre': 'Destinos Verano',
+        },
+    ]
+
+    contexto_inicio = {
+            'lista_inicio': lista_inicio, 
+        }
+
+    return render(request, 'inicio/inicio.html', contexto_inicio)
 
 def tema1(request):
     lista_destinos_invierno = [
