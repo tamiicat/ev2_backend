@@ -24,7 +24,7 @@
 
 <div id="myCarousel" class="carousel slide mb-6" data-bs-ride="carousel">
     <div class="carousel-indicators">
-        {% for item in lista_destinos %}
+        {% for item in lista_elementos %}
             <button type="button" 
                     data-bs-target="#myCarousel" 
                     data-bs-slide-to="{{ forloop.counter0 }}" 
@@ -35,7 +35,7 @@
     </div>
 
     <div class="carousel-inner">
-        {% for item in lista_destinos%}
+        {% for item in lista_elementos %}
             <div class="carousel-item {% if forloop.first %}active{% endif %}">
                 
                 <svg aria-hidden="true" class="bd-placeholder-img" height="100%" preserveAspectRatio="xMidYMid slice" width="100%" xmlns="http://www.w3.org/2000/svg">
