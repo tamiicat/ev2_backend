@@ -31,8 +31,42 @@
                     class="d-inline-block align-text-top me-2">
                 Destinos Chile
                 </a>
+
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNavbar" aria-controls="mainNavbar" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse" id="mainNavbar">
+                    <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link" href="{% url 'temas:inicio' %}">Inicio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="{% url 'temas:tema1' %}">Destinos Invierno</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="{% url 'temas:tema2' %}">Destinos Verano</a>
+                        </li>
+                    </ul>
+                </div>
             </div>
         </nav>
+
+        <header class="text-center my-4">
+
+        <div class="collapse navbar-collapse" id="mainNavbar">
+            <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                    <a class="nav-link" href="{% url 'temas:inicio' %}">Inicio</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="{% url 'temas:tema1' %}">Destinos Invierno</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="{% url 'temas:tema2' %}">Destinos Verano</a>
+                </li>
+            </ul>
+        </div>
 
         <header class="text-center my-4">
             <h1 class="fw-bold mt-3">
