@@ -20,7 +20,7 @@
             {% else %}
                 <svg class="bd-placeholder-img rounded-circle mb-3 shadow-sm" 
                     width="140" 
-                    height="140" 
+                    height="180" 
                     xmlns="http://www.w3.org/2000/svg" 
                     role="img" 
                     preserveAspectRatio="xMidYMid slice" 
@@ -30,8 +30,8 @@
             {% endif %}
 
             <h4 class="fw-bold {{ item.clase_titulo|default:'text-dark' }}">{{ item.nombre }}</h4>
-            <p class="mt-auto">
-                <a class="btn {{ item.clase_boton|default:'btn-outline-primary' }}" href="{{ item.url|default:'#' }}">
+            <p class="mt-2">
+                <a class="btn {{ item.clase_boton|default:'btn-visitar' }}" href="{{ item.url|default:'#' }}">
                     {{ item.texto_boton|default:'Visitar' }} &raquo;
                 </a>
             </p>
